@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+#paginated-form {
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+height: 100vh
+}
+div.page{
+    display:flex;
+    flex-direction: column;
+}
+div.page-buttons{
+    display:flex;
+    flex-direction: row;
+}
+div.page-buttons button{
+    display:flex;
+    justify-content: center;
+    width:50%;
+}
+div.page:first-child div.page-buttons{
+    justify-content: flex-end;
+}
+div.page:last-child div.page-buttons{
+    justify-content: flex-start;
+}

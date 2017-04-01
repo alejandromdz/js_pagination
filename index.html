@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="paginated-form">
+        <div class="page">
+            <label for="name">Name: </label>
+            <input type="text" name="name" value="" placeholder="John Doe" />
+            <br/>
+            <label for="name">Password: </label>
+            <input type="password" name="password" value="" placeholder="******" />
+            <br/>
+            <div class="page-buttons">
+                <button data-target=2>Next</button>
+            </div>
+        </div>
+
+        <div class="page">
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" value="" placeholder="johndoe@example.com" />
+            <br/>
+            <label for="telephone">Telephone: </label>
+            <input type="tel" name="telephone" value="" />
+            <br/>
+            <div class="page-buttons">
+                <button data-target=1>Prev</button>
+                <button data-target=3>Next</button>
+            </div>
+        </div>
+        <div class="page">
+            <label for="enquiry">Enquiry: </label>
+            <select name="enquiry">
+            <option value="general">General</option>
+            <option value="sales">Sales</option>
+            <option value="support">Support</option>
+            </select>
+            <br/>
+            <label for="message">Message: </label>
+            <textarea name="message" placeholder="Your message must be greater than 20 charcters" data-minlength="20"></textarea>
+            <br/>
+            <div class="page-buttons">
+                <button data-target=2>Prev</button>
+                <button data-target=4>Next</button>
+            </div>
+        </div>
+        <div class="page">
+            <input type="submit" value="SUBMIT" id="submit-button" />
+            <br/>
+            <div class="page-buttons">
+                <button data-target=3>Prev</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

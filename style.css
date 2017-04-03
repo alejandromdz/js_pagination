@@ -5,14 +5,27 @@
 
 #paginated-form {
 display:flex;
-flex-direction: row;
+font-family: Arial, Helvetica, sans-serif;
+flex-direction: column;
 align-items: center;
-justify-content: space-around;
-height: 100vh
+justify-content: center;
+position: relative;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+
+  color:white;
+  padding:20px;
+
 }
 div.page{
     display:flex;
     flex-direction: column;
+    width:130px;
+    animation: enter 1s forwards cubic-bezier(0.39, 0.575, 0.565, 1);
+    padding:20px;
+      background-color:#345;
 }
 div.page-buttons{
     display:flex;
@@ -28,4 +41,24 @@ div.page:first-child div.page-buttons{
 }
 div.page:last-child div.page-buttons{
     justify-content: flex-start;
+}
+
+div.page-numbers{
+display:flex;
+width:130px;
+}
+
+div.page-numbers button{
+    display:flex;
+    justify-content: center;
+    width:25%;
+}
+@keyframes enter{
+  from {
+		transform: translateX(150%);
+	}
+	to		
+	{
+		transform: translateX(0%);
+	}
 }
